@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<meta http-equiv="refresh" content="30">
+<meta http-equiv="refresh" content="12">
 <style>
    .CSSTableGenerator {
 	margin:0px;padding:0px;
