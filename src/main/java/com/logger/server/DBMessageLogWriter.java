@@ -85,7 +85,7 @@ public class DBMessageLogWriter {
 		      System.out.println("Creating statement...");
 		      stmt = conn.createStatement();
 		      String sql;
-		      sql = "SELECT APPLICATION_NAME, KEY_STRING, MESSAGE, ADDITIONAL_INFO FROM LOG_MESSAGE ORDER BY LOG_MESSAGE_ID LIMIT 20";
+		      sql = "SELECT APPLICATION_NAME, KEY_STRING, MESSAGE, ADDITIONAL_INFO FROM LOG_MESSAGE ORDER BY LOG_MESSAGE_ID DESC LIMIT 40";
 		      //sql1 = "INSERT INTO LOG_MESSAGE(APPLICATION_NAME, KEY_STRING, MESSAGE, ADDITIONAL_INFO) VALUES("+applicationName+", "+keyString+", "+message+", "+additionalInfo+")";
 		      ResultSet rs = stmt.executeQuery(sql);
 	          //ResultSet rs1=stmt.executeQuery(sql1);
