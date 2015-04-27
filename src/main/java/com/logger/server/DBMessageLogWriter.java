@@ -35,7 +35,7 @@ public class DBMessageLogWriter {
 	      stmt = conn.createStatement();
 	      String sql;
 	      
-	      sql = "INSERT INTO LOG_MESSAGE(APPLICATION_NAME, KEY_STRING, MESSAGE, ADDITIONAL_INFO) VALUES('"+message.getAppName()+"', '"+message.getKey()+"', '"+message.getMessage()+"', '"+message.getAdditionalDetails()+"')";
+	      sql = "INSERT INTO LOG_MESSAGE(APPLICATION_NAME, KEY_STRING, MESSAGE, ADDITIONAL_INFO,create_date) VALUES('"+message.getAppName()+"', '"+message.getKey()+"', '"+message.getMessage()+"', '"+message.getAdditionalDetails()+"',sysdate())";
 	     
           int rs1=stmt.executeUpdate(sql);
 	     
